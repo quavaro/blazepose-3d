@@ -194,12 +194,14 @@
             scene.add(model);
             loaderAnim.remove();
             mixer = new THREE.AnimationMixer(model);
-            // let idleAnim = THREE.AnimationClip.findByName(fileAnimations, 'idle');
-            // idleAnim.tracks.splice(12, 3);
-            // idleAnim.tracks.splice(27, 3);
-            // idleAnim.tracks.splice(84, 3);
-            // idle = mixer.clipAction(idleAnim);
-            // idle.play();
+             let idleAnim = THREE.AnimationClip.findByName(fileAnimations, 'idle');
+             idleAnim.tracks.splice(12, 3);
+             idleAnim.tracks.splice(18, 3);
+             idleAnim.tracks.splice(18, 3);
+             idleAnim.tracks.splice(18, 3);
+             idleAnim.tracks.splice(18, 3);
+             idle = mixer.clipAction(idleAnim);
+             idle.play();
         },
         undefined, // We don't need this function
         function(error) {
