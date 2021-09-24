@@ -312,7 +312,7 @@
         joint.rotation.x = landMark.y;
       }
       else{
-        joint.rotation.y = landMark.x-0.5;
+        joint.rotation.y = (-1)*(landMark.x-0.5);
         joint.rotation.x = landMark.y-0.5;
       }
       
