@@ -198,8 +198,8 @@
              idleAnim.tracks.splice(12, 3);
              idleAnim.tracks.splice(18, 3);
              idleAnim.tracks.splice(18, 3);
-             idleAnim.tracks.splice(18, 3);
-             idleAnim.tracks.splice(18, 3);
+             idleAnim.tracks.splice(72, 3);
+             idleAnim.tracks.splice(72, 3);
              idle = mixer.clipAction(idleAnim);
              idle.play();
         },
