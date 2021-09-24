@@ -70,7 +70,7 @@
     //drawLandmarks(canvasCtx, results.poseLandmarks,
         //{ color: '#FF0000', lineWidth: 2 });
         //canvasCtx.restore();
-    //}
+    }
       
     const pose = new Pose({
         locateFile: (file) => {
