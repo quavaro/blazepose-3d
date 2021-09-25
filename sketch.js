@@ -101,7 +101,7 @@
      init(); 
      
     function init() {
-        const MODEL_PATH = 'mousey.gltf';
+        const MODEL_PATH = 'aj.gltf';
         
         var loader = new THREE.GLTFLoader();
 
