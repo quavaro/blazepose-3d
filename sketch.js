@@ -99,63 +99,6 @@
     camera.start();
 
      init(); 
-    //  mixamorigHips sketch.js:91:25
-    //  mixamorigSpine sketch.js:91:25
-    //  mixamorigSpine1 sketch.js:91:25
-    //  mixamorigSpine2 sketch.js:91:25
-    //  mixamorigNeck sketch.js:91:25
-    //  mixamorigHead sketch.js:91:25
-    //  mixamorigHeadTop_End sketch.js:91:25
-    //  mixamorigLeftShoulder sketch.js:91:25
-    //  mixamorigLeftArm sketch.js:91:25
-    //  mixamorigLeftForeArm sketch.js:91:25
-    //  mixamorigLeftHand sketch.js:91:25
-    //  mixamorigLeftHandThumb1 sketch.js:91:25
-    //  mixamorigLeftHandThumb2 sketch.js:91:25
-    //  mixamorigLeftHandThumb3 sketch.js:91:25
-    //  mixamorigLeftHandThumb4 sketch.js:91:25
-    //  mixamorigLeftHandIndex1 sketch.js:91:25
-    //  mixamorigLeftHandIndex2 sketch.js:91:25
-    //  mixamorigLeftHandIndex3 sketch.js:91:25
-    //  mixamorigLeftHandIndex4 sketch.js:91:25
-    //  mixamorigLeftHandMiddle1 sketch.js:91:25
-    //  mixamorigLeftHandMiddle2 sketch.js:91:25
-    //  mixamorigLeftHandMiddle3 sketch.js:91:25
-    //  mixamorigLeftHandMiddle4 sketch.js:91:25
-    //  mixamorigLeftHandRing1 sketch.js:91:25
-    //  mixamorigLeftHandRing2 sketch.js:91:25
-    //  mixamorigLeftHandRing3 sketch.js:91:25
-    //  mixamorigLeftHandRing4 sketch.js:91:25
-    //  mixamorigRightShoulder sketch.js:91:25
-    //  mixamorigRightArm sketch.js:91:25
-    //  mixamorigRightForeArm sketch.js:91:25
-    //  mixamorigRightHand sketch.js:91:25
-    //  mixamorigRightHandThumb1 sketch.js:91:25
-    //  mixamorigRightHandThumb2 sketch.js:91:25
-    //  mixamorigRightHandThumb3 sketch.js:91:25
-    //  mixamorigRightHandThumb4 sketch.js:91:25
-    //  mixamorigRightHandIndex1 sketch.js:91:25
-    //  mixamorigRightHandIndex2 sketch.js:91:25
-    //  mixamorigRightHandIndex3 sketch.js:91:25
-    //  mixamorigRightHandIndex4 sketch.js:91:25
-    //  mixamorigRightHandMiddle1 sketch.js:91:25
-    //  mixamorigRightHandMiddle2 sketch.js:91:25
-    //  mixamorigRightHandMiddle3 sketch.js:91:25
-    //  mixamorigRightHandMiddle4 sketch.js:91:25
-    //  mixamorigRightHandRing1 sketch.js:91:25
-    //  mixamorigRightHandRing2 sketch.js:91:25
-    //  mixamorigRightHandRing3 sketch.js:91:25
-    //  mixamorigRightHandRing4 sketch.js:91:25
-    //  mixamorigLeftUpLeg sketch.js:91:25
-    //  mixamorigLeftLeg sketch.js:91:25
-    //  mixamorigLeftFoot sketch.js:91:25
-    //  mixamorigLeftToeBase sketch.js:91:25
-    //  mixamorigLeftToe_End sketch.js:91:25
-    //  mixamorigRightUpLeg sketch.js:91:25
-    //  mixamorigRightLeg sketch.js:91:25
-    //  mixamorigRightFoot sketch.js:91:25
-    //  mixamorigRightToeBase sketch.js:91:25
-    //  mixamorigRightToe_End sketch.js:91:25
      
     function init() {
         const MODEL_PATH = 'mousey.gltf';
@@ -194,14 +137,14 @@
             scene.add(model);
             loaderAnim.remove();
             mixer = new THREE.AnimationMixer(model);
-             let idleAnim = THREE.AnimationClip.findByName(fileAnimations, 'idle');
-             idleAnim.tracks.splice(12, 3);
-             idleAnim.tracks.splice(18, 3);
-             idleAnim.tracks.splice(18, 3);
-             idleAnim.tracks.splice(72, 3);
-             idleAnim.tracks.splice(72, 3);
-             idle = mixer.clipAction(idleAnim);
-             idle.play();
+            //  let idleAnim = THREE.AnimationClip.findByName(fileAnimations, 'idle');
+            //  idleAnim.tracks.splice(12, 3);
+            //  idleAnim.tracks.splice(18, 3);
+            //  idleAnim.tracks.splice(18, 3);
+            //  idleAnim.tracks.splice(72, 3);
+            //  idleAnim.tracks.splice(72, 3);
+            //  idle = mixer.clipAction(idleAnim);
+            //  idle.play();
         },
         undefined, // We don't need this function
         function(error) {
@@ -312,7 +255,7 @@
         joint.rotation.x = landMark.y;
       }
       else{
-        joint.rotation.y = (-1)*(landMark.x-0.5);
+        joint.rotation.y = landMark.x-0.5;
         joint.rotation.x = landMark.y-0.5;
       }
       
